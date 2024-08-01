@@ -5,7 +5,7 @@
 ### nmap
 A tool to scan the open ports, the services they expose and their versions. Versions are useful to look for known vulnerabilities and exploits.
 ```
-nmap -sC -sV -p- 10.10.11.8
+nmap -p- -sC -sV -A --min-rate=5000 10.10.11.8
 ```
 
 ### feroxbuster

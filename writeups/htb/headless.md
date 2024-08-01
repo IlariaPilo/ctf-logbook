@@ -106,7 +106,7 @@ That's all folks!
 I really enjoyed this challenge, it was a good starting point for HTB and I learned a lot of useful stuff!
 
 **__Tools recap__**
-- `nmap` to scan ports: nmap -sC -sV -p- 10.10.11.8
+- `nmap` to scan ports: nmap -sC -sV 10.10.11.8
 - `feroxbuster` to bruteforce the website directories: feroxbuster --url http://10.10.11.8:5000 -w ~/snap/feroxbuster/common/raft-medium-directories.txt
 - Burp Suite Community Edition to make and intercept HTTP requests
 
