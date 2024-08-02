@@ -170,14 +170,12 @@ $ cat /root/root.txt
 <ROOT FLAG>
 ```
 
-## EXTRA // TODO
-
 ## 🫖 Conclusion and tools recap
 What a humbling experience! If this box was easy, I don't want to think about the insane ones...
 
 Anyway, now I'm slightly crazier than before. Also, I hate curl. And I need to sleep.
 
-A great experience! 418/10.  
+A great experience! 418/10 would recommend.  
 
 **__Tools recap__**
 <!--TODO-->
