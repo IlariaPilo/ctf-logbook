@@ -7,3 +7,4 @@ Welcome stranger!
 1. [Headless](./headless.md)
 2. [TwoMillion](./twomillion.md)
 3. [PermX](./permx.md)
+4. [BoardLight](./boardlight.md)
