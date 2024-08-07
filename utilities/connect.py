@@ -1,7 +1,7 @@
-# A script to automatically connect to a nc server
+# A script to connect to a server via TCP, and automatically reply with whatever logic you want!
 import socket
 
-def process(input_string):
+def process(received_data):
     # Replace this function with the processing logic
     return ''
 
