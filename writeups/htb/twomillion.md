@@ -177,5 +177,5 @@ Anyway, now I'm slightly crazier than before. Also, I hate curl. And I need to s
 
 A great experience! 418/10 would recommend.  
 
-**__Tools recap__**
+*__Tools recap__*
 <!--TODO-->

@@ -81,7 +81,7 @@ fi
 ```
 While all the other commands are called with their full name, this `./initdb.sh` script is called with its relative path. Moreover, since it's called by a process with root privileges, it will also have root privileges. Very convenient...
 
-From our home directory (on which we have writing permissions), we create our own `initdb.sh` file. Useless to day, it will **__not__** initialize the database.
+From our home directory (on which we have writing permissions), we create our own `initdb.sh` file. Useless to day, it will *__not__* initialize the database.
 ```sh
 $ echo bash > initdb.sh
 $ chmod +x initdb.sh
@@ -105,7 +105,7 @@ That's all folks!
 
 I really enjoyed this challenge, it was a good starting point for HTB and I learned a lot of useful stuff!
 
-**__Tools recap__**
+*__Tools recap__*
 - `nmap` to scan ports: nmap -sC -sV 10.10.11.8
 - `feroxbuster` to bruteforce the website directories: feroxbuster --url http://10.10.11.8:5000 -w ~/snap/feroxbuster/common/raft-medium-directories.txt
 - Burp Suite Community Edition to make and intercept HTTP requests

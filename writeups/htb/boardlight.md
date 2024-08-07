@@ -29,7 +29,7 @@ The Python exploit script doesn't seem to work.
 The website creation goes well, but attempting to make a new page triggers the request timeout. Trying to execute the exploit using the Dolibarr GUI is even less productive, as the server doesn't respond to any POST request.
 
 After more than 5 hours spent on this issue, some gentle soul posts on the HTB official forum, sharing that the issue is actually the HTB VPN. 
-1 hour and 9 VPN configurations later, I manage to find a working combination (**__SG FREE 1 with TCP__**), and the exploit works first try.
+1 hour and 9 VPN configurations later, I manage to find a working combination (*__SG FREE 1 with TCP__*), and the exploit works first try.
 
 I finally have a shell!
 
