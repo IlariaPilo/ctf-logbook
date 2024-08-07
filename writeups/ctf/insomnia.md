@@ -1,21 +1,6 @@
 # [Insomnia](https://app.hackthebox.com/challenges/Insomnia) Writeup [HTB]
 _Web_
 
-<style>
-.spoiler, .spoiler2, .spoiler a, .spoiler2 a{ 
-  color: black; 
-  background-color: black;
-}
-
-.spoiler:hover, .spoiler:hover a {
-  color: white;
-}
-
-.spoiler2:hover, .spoiler2:hover a { 
- background-color:white; 
-}
-</style>
-
 ## Investigating the website
 This challenge provides us with a vaporwave-looking website. 
 It looks very simple, the only working parts are a sign-in and a sign-up form.
@@ -62,7 +47,7 @@ public function login() {
 ## Finding the exploit
 I don't know much PHP, so I start analyzing the function line-by-line.
 - `request()->getJSON(true)` simply takes the body of the HTTP request and put it into a PHP associative array;
-- The "if" clause checks whether the array has two elements; <span class="spoiler" >...or does it?</span>
+- The "if" clause checks whether the array has two elements;
 - `$db->table("users")->getWhere($json_data, 1, 0)` queries the database.
 
 More specifically, the query works as follows. Suppose we are passing as credentials:
@@ -85,7 +70,7 @@ But what if we passed the following?
     "username": "administrator"
 }
 ```
-We could be able to get the admin credentials without even needing a password! Too bad the "if" is making sure the JSON object we are passing has 2 and only 2 fields... <span class="spoiler" >But is it really?</span>
+We could be able to get the admin credentials without even needing a password! Too bad the "if" is making sure the JSON object we are passing has 2 and only 2 fields... But is it really?
 
 I double-check the "if" condition. Now that I focus on it, it does look weird. Why is it not using `!=`? I search on the Internet and discover that yes, PHP has the classic "not equal" operator, meaning this is just a _not_ and an _equal_ combined. 
 
