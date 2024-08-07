@@ -1,2 +1,2 @@
 *.py
-!./utilities/*.py
+!utilities/*.py
