@@ -7,3 +7,4 @@ This folder contains writeups for single CTF challenges I've made!
 3. [jscalc](./jscalc.md) [_Web_]
 4. [Insomnia](./insomnia.md) [_Web_]
 5. [ProxyAsAService](./proxyasaservice.md) [_Web_]
+6. [ApacheBlaze](./apacheblaze.md) [_Web_]
