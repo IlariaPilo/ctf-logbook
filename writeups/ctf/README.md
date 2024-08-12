@@ -8,3 +8,5 @@ This folder contains writeups for single CTF challenges I've made!
 4. [Insomnia](./insomnia.md) [_Web_]
 5. [ProxyAsAService](./proxyasaservice.md) [_Web_]
 6. [ApacheBlaze](./apacheblaze.md) [_Web_]
+7. [Encryption Bot](./encryptionbot.md) [_Reverse_]
+8. [ARMs Race](./armsrace.md) [_Reverse_]
