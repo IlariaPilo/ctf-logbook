@@ -10,3 +10,4 @@ This folder contains writeups for single CTF challenges I've made!
 6. [ApacheBlaze](./apacheblaze.md) [_Web_]
 7. [Encryption Bot](./encryptionbot.md) [_Reverse_]
 8. [ARMs Race](./armsrace.md) [_Reverse_]
+9. [xorxorxor](./xorxorxor.md) [_Crypto_]
