@@ -1,5 +1,13 @@
 # Tools
 
+## Forensics
+
+### volatility
+A tool that can be used to navigate a memory dump. Volatility and forensics are almost synonyms! Here are some interesting links:
+- [Guided quickstart](https://medium.com/@zemelusa/first-steps-to-volatile-memory-analysis-dcbd4d2d56a1);
+- [File extraction](https://whiteheart0.medium.com/retrieving-files-from-memory-dump-34d9fa573033);
+- [Cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet).
+
 ## Web
 
 ### nmap
