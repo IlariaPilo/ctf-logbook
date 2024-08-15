@@ -52,3 +52,6 @@ Finally, it's time to generate! I prepare the URL and feed it to PDFy:
 https://e794c1568d1a1ad10d344a9ab47cb330.serveo.net/sus.php
 ```
 I download the resulting PDF, open it, and get the flag!
+
+## Read more!
+[➡️ Next challenge: jscalc](./jscalc.md)

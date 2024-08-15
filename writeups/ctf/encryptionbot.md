@@ -261,3 +261,6 @@ def decrypt(ciphertext):
 ENCRYPTED = '9W8TLp4k7t0vJW7n3VvMCpWq9WzT3C8pZ9Wz'
 decrypt(ENCRYPTED)
 ```
+
+## Read more!
+[➡️ Next challenge: ARMs Race](./armsrace.md)

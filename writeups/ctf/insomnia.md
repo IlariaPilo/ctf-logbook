@@ -86,3 +86,6 @@ if (count($json_data) == 0) {
 ```
 
 I simply send a `/login` request with only the username, log in as admin and get the flag!
+
+## Read more!
+[➡️ Next challenge: ProxyAsAService](./proxyasaservice.md)

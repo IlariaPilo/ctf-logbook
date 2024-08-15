@@ -41,3 +41,6 @@ def key_recovery():
     return key
 ```
 I just set the key to this value, run the already provided `decode` function and get the flag!
+
+## Read more!
+[➡️ Next challenge: Secure Signing](./securesigning.md)

@@ -75,3 +75,6 @@ for i in range(len(flag)+1,100):
             flag += ch
             break
 ```
+
+## Read more!
+[➡️ Next challenge: Protein Cookies](./proteincookies.md)

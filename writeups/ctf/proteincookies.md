@@ -194,3 +194,6 @@ Now, writing this exploit from scratch requires taking care of a bunch of annoyi
 I write a script (see [hash_extension_demo](../../utilities/hash_extension_demo.py)), set up the attack parameters, and bake the cookie.
 
 Once the cookie is ready, I add it to a GET `/program` request and get the flag!
+
+## Read more!
+[➡️ Next challenge: Reminiscent](./reminiscent.md)

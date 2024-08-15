@@ -30,3 +30,6 @@ I start looking for a Javascript one-liner to read the content of a file. After 
 require('fs').readFileSync('/flag.txt').toString();
 ```
 I provide it to the calculator and get the flag!
+
+## Read more!
+[➡️ Next challenge: Insomnia](./insomnia.md)

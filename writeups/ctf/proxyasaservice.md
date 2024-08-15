@@ -125,3 +125,6 @@ I'm not done yet, since simply passing `/?url=@127.0.0.1:1337/debug/environment`
 I set up the server so that every request is redirected to `127.0.0.1:1337/debug/environment`, then I expose it using [serveo](https://serveo.net/). Since my serveo URL is not blacklisted, I can send a request to the proxy for `/?url=@9e2040d994d0627d3ae89bfa552dea99.serveo.net`, sit tight and get the flag directly in my browser!
 
 ![Getting the flag](../figs/hey-server-302.gif)
+
+## Read more!
+[➡️ Next challenge: ApacheBlaze](./apacheblaze.md)

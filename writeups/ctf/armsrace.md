@@ -88,3 +88,6 @@ if __name__ == "__main__":
 ```
 
 And there you have it, the flag is mine!
+
+## Read more!
+[➡️ Next challenge: xorxorxor](./xorxorxor.md)

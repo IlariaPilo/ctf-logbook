@@ -81,3 +81,6 @@ GET /api/games/click_topia%20HTTP/1.1%0d%0aHost:%20dev.apacheblaze.local%0d%0a%0
 [...]
 ```
 The injection is successful and I receive the flag!
+
+## Read more!
+[➡️ Next challenge: Encryption Bot](./encryptionbot.md)
