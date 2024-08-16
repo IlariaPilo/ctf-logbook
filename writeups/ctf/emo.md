@@ -343,3 +343,5 @@ And finally, here is my flag!
 id:M8nHJyeR;int:3000;jit:500;flag:HTB{XXX};url:;
 ```
 
+## Read more!
+[➡️ Next challenge: TrueSecrets](./truesecrets.md)
