@@ -8,6 +8,12 @@ A tool that can be used to navigate a memory dump. Volatility and forensics are 
 - [File extraction](https://whiteheart0.medium.com/retrieving-files-from-memory-dump-34d9fa573033);
 - [Cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet).
 
+### oletools
+A suite of tools to analyze macros in MS Office files. Start with `oleid` for an overview of the file, and then follow the tool's advices to advance your investigation!
+```
+oleid emo.doc
+``` 
+
 ## Web
 
 ### nmap

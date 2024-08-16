@@ -14,3 +14,4 @@ This folder contains writeups for single CTF challenges I've made!
 10. [Secure Signing](./securesigning.md) [_Crypto_]
 11. [Protein Cookies](./proteincookies.md) [_Crypto_]
 12. [Reminiscent](./reminiscent.md) [_Forensics_]
+13. [emo](./emo.md) [_Forensics_]
