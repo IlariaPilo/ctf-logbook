@@ -96,3 +96,6 @@ Wrote deciphered data (not compressed).
 $ cat flag.txt 
 Secret: HTB{<REDACTED>}
 ```
+
+## Read more!
+[➡️ Next challenge: Like a Glove](./likeaglove.md)
