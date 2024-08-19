@@ -208,3 +208,5 @@ Cmd: dir c:\users\greg\documents
 Cmd: type c:\users\greg\documents\flag.txt
 HTB{<REDACTED>}
 ```
+## Read more!
+[➡️ Next challenge: SecretRezipe](./secretrezipe.md)

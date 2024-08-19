@@ -14,6 +14,19 @@ A suite of tools to analyze macros in MS Office files. Start with `oleid` for an
 oleid emo.doc
 ``` 
 
+## Misc
+
+### bkcrack
+A tool cracking legacy zip encryption with Biham and Kocher's known plaintext attack.
+```sh
+# read metadata
+bkcrack -L secret.zip 
+# recover keys
+bkcrack -C secret.zip -c password.txt -p plain
+# extract `password` file
+bkcrack -C secret.zip -c password.txt -k c1dcd6ee ed71e97d 8fde64f7 -d pwd.txt
+```
+
 ## Web
 
 ### nmap
