@@ -18,3 +18,4 @@ This folder contains writeups for single CTF challenges I've made!
 14. [TrueSecrets](./truesecrets.md) [_Forensics_]
 15. [SecretRezipe](./secretrezipe.md) [_Misc_]
 16. [Like a Glove](./likeaglove.md) [_AI - ML_]
+17. [C.O.P](./cop.md) [_Web_]

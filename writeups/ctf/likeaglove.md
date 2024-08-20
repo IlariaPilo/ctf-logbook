@@ -89,3 +89,6 @@ with open('chal.txt', 'r') as file:
 flag = ''.join(flag.split())
 print(flag)
 ```
+
+## Read more!
+[➡️ Next challenge: C.O.P](./cop.md)
