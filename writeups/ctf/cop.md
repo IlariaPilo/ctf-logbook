@@ -96,3 +96,6 @@ And my Python server will give me the flag on a silver plate!
 ```sh
 127.0.0.1 - - [19/Aug/2024 09:49:50] "GET /HTB%7B<REDACTED>%7D HTTP/1.1" 404 -
 ```
+
+## Read more!
+[➡️ Next challenge: Golfer - Part 1](./golfer1.md)
