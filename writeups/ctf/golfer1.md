@@ -1,5 +1,5 @@
 # [Golfer - Part 1](https://app.hackthebox.com/challenges/Golfer%2520-%2520Part%25201) Writeup [HTB]
-[_Reverse_]
+_Reverse_
 
 ## Analyzing the executable
 This challenge comes with a tiny executable file. I begin with the classic `strings` command, to see what's inside:
