@@ -27,6 +27,27 @@ bkcrack -C secret.zip -c password.txt -p plain
 bkcrack -C secret.zip -c password.txt -k c1dcd6ee ed71e97d 8fde64f7 -d pwd.txt
 ```
 
+### fcrackzip
+A tool to efficiently bruteforce the password of a zip file. If you want to run a dictionary attack, you might be interested in downloading `rockyou.txt` [here](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt&ved=2ahUKEwjqwajX_LyIAxVtR_EDHZm6PW4QFnoECAgQAQ&usg=AOvVaw3snAERl1mU6Ccr4WFEazBd).
+```sh
+# to run a dictionary attack 
+fcrackzip -v -D -p rockyou.txt -u target.zip
+```
+
+### exiftool
+Useful to read the metadata of a file
+```sh
+exiftool target.pdf
+```
+
+### Audacity
+The software to use when dealing with audio data. It automatically:
+- displays the spectrogram (next to the name of the track, click `...` > `Spectrogram`);
+- displays the frequency plot (`Analyze` > `Plot Spectrum`);
+- changes the pitch and speed (right click on the track, then `Pitch and Speed`).
+
+It can be used to do many more complex things, take a look at the [resources](./resources.md) to see some examples.
+
 ## Web
 
 ### nmap
