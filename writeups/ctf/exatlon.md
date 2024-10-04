@@ -147,3 +147,6 @@ pwd = rev_exatlon('1152 1344 1056 1968 1728 816 1648 784 1584 816 1728 1520 1840
 print(pwd)
 ```
 Running this tiny Python script reveals the flag!
+
+## Read more!
+[➡️ Next challenge: Cyberpsychosis](./cyberpsychosis.md)

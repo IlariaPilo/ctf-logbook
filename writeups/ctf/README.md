@@ -21,3 +21,4 @@ This folder contains writeups for single CTF challenges I've made!
 17. [C.O.P](./cop.md) [_Web_]
 18. [Golfer - Part 1](./golfer1.md) [_Reverse_]
 19. [Exatlon](./exatlon.md) [_Reverse_]
+20. [Cyberpsychosis](./cyberpsychosis.md) [_Reverse_]
