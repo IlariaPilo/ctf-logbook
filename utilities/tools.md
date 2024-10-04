@@ -14,6 +14,16 @@ A suite of tools to analyze macros in MS Office files. Start with `oleid` for an
 oleid emo.doc
 ``` 
 
+### pyinstxtractor × decompyle3
+[`pyinstxtractor`](https://github.com/extremecoders-re/pyinstxtractor) is a tool that can be used to unpack executables made with PyInstaller.
+```sh
+python pyinstxtractor.py program.exe
+```
+Once the `.pyc` files are generated, they can be decompiled with `decompyle3`:
+```sh
+decompyle3 program.exe_extracted/program.pyc
+```
+
 ## Misc
 
 ### bkcrack
